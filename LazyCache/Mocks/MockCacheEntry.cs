@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Primitives;
+using System;
+using System.Collections.Generic;
 
 namespace LazyCache.Mocks
 {

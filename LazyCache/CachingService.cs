@@ -1,9 +1,9 @@
-﻿using System;
+﻿using LazyCache.Providers;
+using Microsoft.Extensions.Caching.Memory;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using LazyCache.Providers;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace LazyCache
 {
