@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>LazyCache</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LazyCacheNinjectVersion Condition="'$(LazyCacheNinjectVersion)' == ''">1.0.0</LazyCacheNinjectVersion>
@@ -23,9 +23,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="microsoft.extensions.caching.abstractions" Version="2.2.0" />
-    <PackageReference Include="microsoft.extensions.caching.memory" Version="2.2.0" />
-    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.5" />
+    <PackageReference Include="Ninject" Version="3.3.6" />
     <ProjectReference Include="..\LazyCache\LazyCache.csproj" />
   </ItemGroup>
 

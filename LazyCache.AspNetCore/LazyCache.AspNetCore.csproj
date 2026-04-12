@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>LazyCache</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LazyCacheAspNetCoreVersion Condition="'$(LazyCacheAspNetCoreVersion)' == ''">1.0.0</LazyCacheAspNetCoreVersion>
@@ -24,9 +24,9 @@
 
 
   <ItemGroup>
-    <PackageReference Include="microsoft.extensions.dependencyinjection.abstractions" Version="2.2.0" />
-    <PackageReference Include="microsoft.extensions.caching.abstractions" Version="2.2.0" />
-    <PackageReference Include="microsoft.extensions.caching.memory" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.5" />
     <ProjectReference Include="..\LazyCache\LazyCache.csproj" />
   </ItemGroup>
 

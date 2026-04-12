@@ -1,25 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="nunit" Version="3.11.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="NUnit" Version="4.5.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LazyCache.Ninject\LazyCache.Ninject.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Ninject">
-      <HintPath>C:\Users\Alastair\.nuget\packages\ninject\3.3.4\lib\netstandard2.0\Ninject.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
